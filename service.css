@@ -1,0 +1,188 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall page layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 100px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-intro {
+    margin-bottom: 50px;
+}
+
+.services-intro h1 {
+    font-size: 3em;
+    color: #34495e;
+}
+
+.services-intro p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Service List Styles */
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.service-item {
+    width: 22%;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-info h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.service-info p {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+    background-color: #3498db;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.call-to-action h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+    }
+
+    .call-to-action h2 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-info h3 {
+        font-size: 1.2em;
+    }
+
+    .service-info p {
+        font-size: 0.9em;
+    }
+}
